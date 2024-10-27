@@ -1,0 +1,168 @@
+body{
+    --backgroundColor: #f8e7e7;
+    --bordeaux: #800000; 
+    --borderLine: #E2D0BC;
+    --beige: #D19F9D;
+}
+@media (max-width: 500em){
+    main{
+        display: flex;
+        flex-direction: column;
+        .info{
+            margin: 2em 6em;
+            display: flex;
+            flex-direction: row;
+            img{
+                border-radius: 50%;
+                width: 15em;
+                height: 15em;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+                margin-right: 2em;
+                
+            }
+            .text{
+                h4{
+                    font-weight: normal;
+                    color: var(--bordeaux);
+                }
+            }
+            button{
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+                background: var(--bordeaux);
+                border-radius: 10px;
+                height: 3em;
+                width: 7em;
+                margin-left: auto;
+                border: none;
+                align-self: center;
+                font-size: larger;
+                cursor: pointer;
+                a{color: white;}
+            }
+            button:hover {
+                background: var(--backgroundColor);
+                a{color: var(--bordeaux);}
+            }
+            .msgbutton{
+                cursor: pointer;
+            }
+            .msgbutton:hover{
+                color: var(--beige);
+            }
+        }
+       .choice{
+            padding-bottom: 2px;
+            margin: 0em 2em;
+            border-bottom: 1px solid var(--bordeaux);
+            button{
+                cursor: pointer;
+                width: 10%;
+                border: none;
+                border-radius: 1.5em;
+                background:var(--backgroundColor);
+                h3{
+                    color: var(--beige);
+                }
+            }
+            button:hover{
+                
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+            background: var(--backgroundColor);
+            transition: all 0.3s ease-out;
+            border-radius:  1.5em;
+            h3{
+                color: #800000;
+            }
+
+            }
+
+       }
+       .myItems{
+            margin: .5em 2em;
+            .condition select{
+                cursor: pointer;
+                border: 2px solid var(--beige);
+                border-radius: 3px;
+                color: var(--beige);
+                width: 8em;
+                height: 2em;
+            }
+            .condition select:focus {
+                outline: none;
+            }
+       }
+    }
+    
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2em 5em;
+        .product{
+            margin-right: 2em;
+            margin-bottom: 2em;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+            display: flex;
+            width: 16em;
+            height: 25em;
+            border: 3px solid white;
+            flex-direction: column;
+            align-items: center;
+            header {
+                display: flex;
+                flex-direction: row;
+            }
+            .foto{
+                border: 0.5em solid white;
+                max-height: 13em;
+                max-width: 13em;
+                cursor: pointer;
+            }
+            }
+            .product:hover{
+                cursor: pointer;
+                transition: all 0.3s ease-out;
+                    border: 3px solid var(--beige);
+                    border-radius: 7px;
+            }
+            .price{
+                color: #2E6963;
+            }
+        }
+        .addProduct{
+            background: var(--backgroundColor);
+            height: 13em;
+            width: 12em;
+            border: 2px dashed var(--bordeaux);
+            margin-right: 2em;
+            margin-bottom: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; 
+            position: relative;
+            border-radius: 10px;
+            .mais {
+                font-size: 2em;
+                color: var(--beige);
+                position: absolute;
+                top: 50%; 
+                left: 50%; 
+                transform: translate(-50%, -50%); 
+              }
+        }
+    }
+
+@media (max-width: 50em){
+    main{
+        .info{
+            margin: 2em 2em;
+            img{
+                max-width: 5em;
+                max-height: 5em;
+                margin-right: 2em;
+            }
+        }
+    }
+    
+}

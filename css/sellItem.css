@@ -1,0 +1,248 @@
+header {
+    padding: 0.63em;
+}
+
+main{
+    --backgroundColor: #f8e7e7;
+    --bordeaux: #800000; 
+}
+
+p{
+    width: 100%;
+    color: var(--bordeaux);
+    font-size: 1.9em;
+    margin-left: 4.1em;
+}
+
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title-input, .description-input, .brand-input, .model-input, .price-input{
+    border: 1.5px solid var(--bordeaux);
+    border-radius: 2px; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.form > div {
+    display: flex;
+    align-items: first baseline;
+    margin-right: 10%;
+}
+
+.form > div label {
+    margin-right: 0.94em; /*espaço label e input*/
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content; /*para n ir direita*/
+    padding: .5em 4em;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .description, .brand, .model, .size, 
+.condition, .category, .price {
+    display: flex;
+    align-items: baseline; 
+    margin-bottom: 1%; 
+}
+
+.title {
+    margin-bottom: 15%;
+}
+
+.title input, .description input,
+.brand input, .category input, .price input {
+    border: 1px solid var(--bordeaux);
+    border-radius: 2px;
+}
+
+.condition {
+    border: 1px solid var(--bordeaux);
+    border-radius: 2px;
+    margin: 0;  
+    margin-bottom: 4%; 
+    margin-top: 4%; 
+    background-color: #fff; 
+    color: #000; 
+    padding-right: 3.6em;
+    max-width: 12em;
+}
+
+.category select {
+    border: 1px solid var(--bordeaux);
+    border-radius: 2px;
+    margin: 0;  
+    background-color: #fff; 
+    color: #000; 
+    padding-right: 4.5em;
+}
+
+.size input[type="radio"] {
+    display: none; 
+}
+
+.quadrado {
+    width: 12.5em;
+    height: 15.63em;
+    background-color: var(--backgroundColor);
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: #800000;
+    border-width: 2px;
+    margin-left: 30%;
+    text-align: center;
+    color: var(--bordeaux);
+}
+
+#imagemExibida {
+    width: 12.5em; 
+    height: 15.63em; 
+    display: block; 
+    margin: auto; 
+    border-radius: 8px; 
+    margin-left: 30%;
+}
+
+.foto-input {
+    display: none;
+}
+
+.submitButton {
+    background: var(--bordeaux);
+    color: white;
+    border-radius: 10em;
+    padding: .5em 4em;
+    border: 3px solid var(--bordeaux);
+    margin-left: 50em;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.submitButton:hover {
+    background: var(--backgroundColor);
+    color: var(--bordeaux);
+    border: 3px solid var(--bordeaux);    
+}
+
+.price-label {
+    margin-left: 3.4em;
+}
+
+.size-label {
+    margin-left: 3.3em;
+}
+
+.model-label {
+    margin-left: 3.1em;
+}
+
+.edit {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    width: 400px;
+    font-size: 1.25em;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+.load-photo {
+    margin-top: 50%;
+}
+
+.size2 .radio-label {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid var(--bordeaux);
+    border-radius: 4px;
+    margin: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: black; 
+}
+
+.size2 .radio-input {
+    display: none; 
+}
+
+.size2 .radio-input:checked + .radio-label {
+    background-color: var(--bordeaux);
+    color: white;
+}
+
+.size2 .radio-label:hover {
+    background-color: var(--bordeaux);
+    color: white;
+}
+
+.message {
+    margin-left: 10%;
+}
+
+.message.error {
+    color: red; 
+}
+
+.message.success {
+    color: green; 
+}
+
+@media (max-width: 1200px) {
+    .form > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-column, .right-column {
+        padding: 1em;
+        width: 100%;
+    }
+
+    .title, .description, .brand, .model, .size, 
+    .condition, .category, .price {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .quadrado, #imagemExibida {
+        margin-left: 1em;
+    }
+
+    .submitButton {
+        margin-left: 0;
+        margin-top: 2em;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    p {
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+
+    .submitButton {
+        padding: .5em 2em;
+    }
+
+    .right-column {
+        padding: 1em;
+        width: 100%;
+        margin-left: 10%;
+    }
+}

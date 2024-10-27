@@ -1,0 +1,98 @@
+body{
+    --backgroundColor: #f8e7e7;
+    --beige: #D19F9D;
+    --bordeaux: #800000;
+    --borderLine: #E2D0BC;
+    margin: 0;
+}
+@media (max-width: 500em){
+    .shipping{
+        background: var(--beige);
+        border: none;
+        border-radius: 10px;
+        max-width: 70%;
+        margin: 3em auto;  
+        padding: 2em;
+        h2{
+            color: #821582;
+            border-bottom: 1px solid white;
+        }
+        h2:hover{
+            
+            color: black;
+        }
+        form >*{align-self: center;
+            margin: 1em;
+        }
+        label{
+            color: var(--bordeaux);
+            margin: 1em;
+        }
+        input{
+            border: 1px solid var(--beige);
+            border-radius: 5px;
+            width: 50%;
+            height: 5%;
+        }
+        .divisor{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 10em;
+                height: 10em;
+                margin: 3em;
+            }
+            button{
+                background-color: var(--bordeaux);
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 10em;
+                height: 5em;
+                margin: 2em;
+            }
+            button:hover{
+                background-color: burlywood;
+            }
+        }
+        .line{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 70em){
+    .shipping{
+        form label{
+            font-size: smaller;
+        }
+        form input{
+            font-size: smaller;
+            width: 45%;
+        }
+    }
+}
+@media print{
+    .topo{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .shipping h2{
+        color: black;
+    }
+    .shipping h1{
+        display: none;
+    }
+}
+.message{margin-left: 3%;}
+.message.error {
+    color: red; 
+}
+.message.success{
+    color: green; 
+}
