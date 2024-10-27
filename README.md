@@ -1,4 +1,7 @@
 # LTW Project ltw04g06
+
+### Grade: 17.4/20
+
 ## Objective
 Develop a website that facilitates the buying and selling of pre-loved items
 
